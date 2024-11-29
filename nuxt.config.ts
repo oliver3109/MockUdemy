@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-
+  pages: true,
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -11,4 +11,5 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/icon"],
+  compatibilityDate: "2024-11-29",
 });
