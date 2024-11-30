@@ -12,4 +12,21 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/icon"],
   compatibilityDate: "2024-11-29",
+
+  nitro: {
+    inlineDynamicImports: true,
+    prerender: {
+      autoSubfolderIndex: false,
+      failOnError: false,
+    },
+    output: {
+      dir: ".output",
+      serverDir: ".output/server",
+      publicDir: ".output/public",
+    },
+    commands: {
+      preview: "npx wrangler dev ./server/index.mjs --site ./public",
+      deploy: "npx wrangler deploy",
+    },
+  },
 });
