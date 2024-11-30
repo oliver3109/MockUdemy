@@ -941,7 +941,7 @@
     </div>
 
     <!-- 右侧浮动 -->
-    <div class="">
+    <div class="tablet:hidden laptop:block desktop:block">
       <div
         :class="
           isActive
