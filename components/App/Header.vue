@@ -1,5 +1,7 @@
 <template>
-  <header class="flex items-center h-16 bg-white px-7 text-sm text-slate-800">
+  <header
+    class="flex items-center h-16 bg-white px-7 text-sm text-slate-800 z-30 relative"
+  >
     <a class="pr-3">
       <!-- LOGO -->
       <img
@@ -22,13 +24,21 @@
       <!-- 搜索框 -->
       <Icon class="px-4" name="uil:search" style="color: black" />
 
-      <div class="grey text-slate-600">搜索任何内容</div>
+      <input
+        type="text"
+        class="grey text-slate-600 border-none outline-none"
+        placeholder="搜索任何内容"
+      />
     </div>
 
     <div class="grid-cols-4 gap-4 flex items-center">
-      <div class="grow">计划和定价</div>
+      <div class="grow tablet:hidden laptop:block desktop:block">
+        计划和定价
+      </div>
       <div class="grow">Udemy Business</div>
-      <div class="grow">在Udemy上授课</div>
+      <div class="grow tablet:hidden laptop:block desktop:block">
+        在Udemy上授课
+      </div>
       <div><Icon name="uil:shopping-cart" style="font-size: 26px" /></div>
     </div>
 
