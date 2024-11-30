@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex items-center h-16 bg-white px-7 text-sm text-slate-800 z-30 relative"
+    class="hidden laptop:flex desktop:flex flex items-center h-16 bg-white px-7 text-sm text-slate-800 z-30 relative"
   >
     <a class="pr-3">
       <!-- LOGO -->
@@ -60,6 +60,27 @@
       >
         <Icon name="uil:globe" style="font-size: 26px" />
       </div>
+    </div>
+  </header>
+
+  <header
+    class="flex laptop:hidden desktop:hidden items-center h-16 bg-white px-7 text-sm text-slate-800 z-30 relative justify-between"
+  >
+    <Icon name="uil:align-justify" style="color: black; font-size: 20px"></Icon>
+    <div class="flow">
+      <img
+        src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+        alt="Udemy"
+        width="75"
+        height="28"
+        loading="lazy"
+        style="vertical-align: middle"
+      />
+    </div>
+
+    <div class="flex items-center gap-2">
+      <Icon name="uil:search" style="color: black; font-size: 20px"></Icon>
+      <Icon name="uil:cart" style="color: black; font-size: 20px"></Icon>
     </div>
   </header>
 </template>

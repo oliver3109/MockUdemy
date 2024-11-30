@@ -1,7 +1,9 @@
 <template>
   <main>
     <!-- 顶部固定 -->
-    <div class="fixed top-0 w-full bg-slate-900 h-16 z-20 px-5 py-2">
+    <div
+      class="hidden laptop:block desktop:block fixed top-0 w-full tablet:bg-white laptop:bg-slate-900 desktop:bg-slate-900 h-16 z-20 px-5 py-2"
+    >
       <div class="text-white font-bold">
         The Complete Python Bootcamp From Zero to Hero in Python
       </div>
@@ -23,7 +25,9 @@
         <div
           class="desktop:max-w-6xl laptop:max-w-5xl tablet:max-w-4xl mx-auto"
         >
-          <div class="desktop:max-w-3xl laptop:max-w-2xl tablet:max-w-xl">
+          <div
+            class="desktop:max-w-3xl laptop:max-w-2xl tablet:max-w-xl tablet:mx-auto laptop:mx-0 desktop:mx-0"
+          >
             <!-- 中间 -->
             <div class="text-sm mb-9 mt-3 ml-6 flex items-center">
               <span class="text-violet-300 cursor-pointer">开发</span>
@@ -147,7 +151,9 @@
         <div
           class="desktop:max-w-6xl laptop:max-w-5xl tablet:max-w-4xl mx-auto"
         >
-          <div class="desktop:max-w-3xl laptop:max-w-2xl tablet:max-w-xl">
+          <div
+            class="desktop:max-w-3xl laptop:max-w-2xl tablet:max-w-xl tablet:mx-auto laptop:mx-0 desktop:mx-0"
+          >
             <!-- 您将会学到 -->
             <div class="border ml-6 p-5 mt-12">
               <div class="text-2xl font-bold mb-4">您将会学到</div>
@@ -941,7 +947,7 @@
     </div>
 
     <!-- 右侧浮动 -->
-    <div class="tablet:hidden laptop:block desktop:block">
+    <div class="hidden tablet:hidden laptop:block desktop:block">
       <div
         :class="
           isActive
